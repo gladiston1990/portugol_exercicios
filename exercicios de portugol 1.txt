@@ -1,0 +1,28 @@
+programa {
+	funcao inicio() {
+		cadeia NOME
+		real CPF
+		inteiro ID
+		inteiro IDADE
+		inteiro NASCIMENTO
+		
+		
+		
+	    escreva("Digite seu nome: ")
+	    leia(NOME)
+	    escreva("Digite seu CPF: ")
+	    leia(CPF)
+	    escreva("Digite seu número de identidade: ")
+	    leia(ID)
+	    escreva("Digite sua IDADE: ")
+	    leia(IDADE)
+	    escreva("Digite seu Ano de Nascimento: ")
+	    leia(NASCIMENTO)
+	    
+	    
+	    escreva("Seu nome é: ",NOME,"\n")
+	    escreva("O número do seu CPF é: ",CPF,"\n")
+	    escreva("Seu número de identificacao é: ",ID,"\n")
+	    escreva("Sua idade é: ", IDADE,"\n")
+	    escreva("O ano de seu nascimento foi: ",NASCIMENTO,"\n")
+	}

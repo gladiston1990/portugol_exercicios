@@ -1,0 +1,34 @@
+programa {
+	funcao inicio() {
+	    real a, b, c, soma, sub, mult, div
+	    
+	    a = 12 //km da BR100 onde João mora
+	    b = 20 //km da BR100 onde fica a escola de João
+	    c = 17 //km onde João retornou
+	   
+	   
+		escreva("João mora no Km 12 da BR100, ele precisa caminhar todos os dias até o Km 20, da BR\n")
+		escreva("para ir a escola, tendo em vista esses dados respoda as seguintes questões abaixo:\n\n")
+		
+		escreva("1) Quantos Km João precisa andar todos os dias para ir a escola?\n")
+		escreva("2) João andou até o km 17 e esqueceu o material escolar, para voltar em casa quantos Km a mais ele precisará andar?\n")
+		escreva("3) A distância total percorrida por João em um dia de aula, tendo em vista inda e volta?")
+		escreva("\n4) Depois de algum tempo João muldou-se para o Km 16 da BR100. Qual será a nova Km total percorrida por João?\n")
+		
+	    sub = b - a
+		escreva("\n1) A quantidade total de km percorrido por João será: ", sub,"km")
+		
+
+		soma = c - a + b - b
+	    escreva("\n2) João terá que andar mais: ", soma, "Km dos 8 necessários")
+	    
+	    mult = 2 * 8
+	    escreva("\n3) Sabendo que João anda 8km para ir a escola, o total de km percorrido por João em um dia de aula é: ", mult,"Km")
+	    
+        div = 16 / 2
+        escreva("\n4) A nova Km total percorrida por João será apenas: ", div,"Km")
+        
+	}   
+
+	
+}

@@ -1,0 +1,70 @@
+programa { 
+    
+    inclua biblioteca Matematica --> mat
+	
+	funcao inicio() {
+			 
+	const inteiro temp_ideal = 50
+	inteiro temp_resisAA, temp_resisAB, temp_resisAC, temp_resisAD, temp_resisAE, temp_resisBA, temp_resisBB, temp_resisBC, temp_resisBD, temp_resisBE, pa_media_t, pb_media_t, troca_termica
+	
+		 //Dispositivos da Placa A
+
+        escreva("Defina o valor de temperatura do Resistor A1: \n")
+		leia(temp_resisAA)
+		
+		escreva("Defina o valor de temperatura do Resistor B1: \n")
+		leia(temp_resisAB)
+		
+		escreva("Defina o valor de temperatura do Resistor C1: \n")
+		leia(temp_resisAC)
+		
+		escreva("Defina o valor de temperatura do Resistor D1: \n")
+		leia(temp_resisAD)		
+		
+		escreva("Defina o valor de temperatura do Resistor E1: \n")
+		leia(temp_resisAE)
+		
+		// Dispositivos da Placa B
+		escreva("Defina o valor de temperatura do Resistor A2\n: ")
+		leia(temp_resisBA)
+		
+		escreva("Defina o valor de temperatura do Resistor B2\n: ")
+		leia(temp_resisBB)
+		
+		escreva("Defina o valor de temperatura do Resistor C2\n: ")
+		leia(temp_resisBC)
+		
+		escreva("Defina o valor de temperatura do Resistor D2\n: ")
+		leia(temp_resisBD)		
+		
+		escreva("Defina o valor de temperatura do Resistor E2\n: ")
+		leia(temp_resisBE)
+		
+		
+	    //Média de temperatura das Placas A & B
+		pa_media_t = (temp_resisAA + temp_resisAB + temp_resisAC + temp_resisAD + temp_resisAE) / 5
+		escreva("\n\nMédia de temperatura dos dispositivo da placa A: ",pa_media_t)
+	
+		pb_media_t = (temp_resisBA + temp_resisBB + temp_resisBC + temp_resisBD + temp_resisBE) / 5
+		escreva("\n\nMédia de temperatura dos dispositivo da placa B: ",pb_media_t)
+		
+		limpa()
+		
+		//Troca términca das médicas de temperatura
+		troca_termica = pa_media_t
+		pa_media_t = pb_media_t
+		pb_media_t = troca_termica
+		
+		escreva("Nova media de temperatura Placa A: ", pa_media_t)
+		escreva("\nNova media de temperatura Placa B: ", pb_media_t)
+		
+		
+		//Condição de alerta para o usuário
+		se (pa_media_t + pb_media_t < 60) 
+		{
+		    escreva("\n\nOs dipositivos das Placas A e B estão operando em uma temperatura ideal")
+		}
+		senao
+		{
+		    escreva("\n\nAlerta! As placas estão superaquecendo")
+		}

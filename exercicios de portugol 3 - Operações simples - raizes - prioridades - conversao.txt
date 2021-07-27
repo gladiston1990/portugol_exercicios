@@ -1,0 +1,34 @@
+programa {
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	inclua biblioteca Matematica --> mat  //biblioteca Matemática
+	
+	funcao inicio() {
+	    inteiro resultado, metade_inteiro, resto 
+	    real valor, potencia, raiz_quadrada
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   
+	    // expressão = resultado /2 = metade_inteiro * 2 = resto
+	    
+	    resultado = (2 + 7) + (5 * 10) / (10 + 7) - (2 + 5) // expressao a ser resolvida e determinar o valor da variável
+	    escreva("O resultado da expressão (2+7)+(5*10)/(10+7)-(2+5) é: ", resultado)
+	    escreva(resultado)
+	   
+	    metade_inteiro = resultado / 2
+	    escreva("\n\nA metade resultado da expressão é: ", metade_inteiro)
+	    escreva(metade_inteiro)
+	    
+	    resto = metade_inteiro * 2
+	    escreva("\n\nO resto é: ", resto)
+	    
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	    valor = resto // conversão do "resto" inteiro para "valor" real
+	    
+	    
+	    potencia = mat.potencia(valor, 3.0)  	//raíz cúbica
+		raiz_quadrada = mat.raiz (valor, 2.0)   // raíz quadrada
+		
+		escreva("\n\nA raiz cubica do resto é :", potencia)
+		escreva("\n\nA raiz quadrada do resto é: ", raiz_quadrada)
+	}
+	
+}
